@@ -17,9 +17,9 @@ In order to insert the NPC menu we designed earlier, the[**NpcEvictionMenu.java*
   
 In this class we call addComponent to register the[**NpcEvictionMenuDisplay.java**](https://github.com/UQdeco2800/2022-ext-studio-1/blob/main/source/core/src/main/com/deco2800/game/components/npcEvictionMenu/NpcEvictionMenuDisplay.java) class. The loadAssets function is used to update the background image.
 
-*/
+```
 private static final String[] npcEvictionMenuTextures = {"images/eviction_menu/evictionMenu_background.png"};  
-*/
+
 public NpcEvictionMenu(GdxGame game) {  
     this.game = game;  
   
@@ -50,8 +50,7 @@ private void loadAssets() {
     resourceService.loadTextures(npcEvictionMenuTextures);  
     ServiceLocator.getResourceService().loadAll();  
 }
-
-
+```
 
 ### Relevant Files
 
